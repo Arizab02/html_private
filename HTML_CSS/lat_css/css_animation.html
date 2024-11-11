@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan animasi</title>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="kotak"></div>
+</body>
+</html>
+<style>
+    .kotak{
+        background-color: rebeccapurple;
+        width: 200px; height: 200px;
+        border-radius: 7% 90% 8% 98% / 7% 75% 96% 92%;
+        transition: all 200ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        position: sticky;
+    }
+    .kotak:hover{
+        background-color: brown;
+        border-radius: 76% 15% 96% 7% / 70% 0% 98% 0%;
+    }
+    .circle{
+        width: 90px;
+        height: 90px;
+        background-color: aqua;
+        border-radius: 14rem;
+        transition-property: all;
+        transition-duration: 200ms;
+        animation-fill-mode: forwards;
+    }
+    .circle:hover{
+        animation-name: animasiku;    
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation: animasiku 500ms infinite forwards alternate;           
+    }
+
+    @keyframes animasiku {
+        0%{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 14rem;
+        }
+        100%{
+            background-color: rgb(51, 69, 236);
+            scale: 1.2;
+        }
+    }
+</style>
