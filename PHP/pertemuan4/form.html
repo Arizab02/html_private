@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <form action="post.php" method="post" class="container">
+        <h1>LOGIN</h1>
+        <div class="Nama">
+            <label for="nama">Nama  :</label>
+            <input method='post' action='post.php' type="text" name="nama" id="nama" required>
+        </div>
+        <div class="email">
+            <label for="email">Email    :</label>
+            <input method='post' action='post.php' type="email" id="email" required>
+        </div>
+        <label for="account"><input type="checkbox" id="account">I don't have an account <a href="#">| sign-up</a></label>
+        <input type="submit" name="Masukan" value="Masukkan">
+    </form>
+    <style>
+        body{
+            font-family: "poppins",sans-serif;
+            background-image: url('644069.png');
+        }
+        form{
+            display: flex;
+            justify-content:center;
+            /* align-content: stretch; */
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgba(170, 187, 255, 0.555);
+            border-radius: 20px;
+            margin:15px 30px;
+        }
+        input{
+            padding: 10px;
+            margin:10px 2px;
+            border-radius: 20px;
+            border: 0;
+            background: linear-gradient(rgba(74, 111, 255, 0.667),#aab9ff);
+            color:linear-gradient(#aab9ff,rgba(74, 111, 255, 0.667));
+            transition: all 2s ease-in;
+        }
+        input:hover,input:active{
+            background:linear-gradient(rgba(74, 111, 255, 0.667),#738dff);
+        }
+        h1{
+            color-scheme: light;
+            color: rgb(1, 1, 46);
+            background: radial-gradient(rgba(140, 163, 255, 0.667),#4164ff00);
+            padding:10px;
+        }
+    </style>
+</body>
+</html>

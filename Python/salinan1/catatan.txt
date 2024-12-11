@@ -1,0 +1,7 @@
+ni adalah salinan dari file branch_kedua
+
+ini adalah penambahan tertulis
+
+ini adalah perubahan kedua
+
+ini adalah perubahan setelah melakukan git reset
