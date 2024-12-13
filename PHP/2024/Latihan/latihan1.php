@@ -28,6 +28,31 @@ var_dump($a); //object object(kelasku)#1 (1) { ["properti"]=>  NULL }
 echo $a->properti;
 echo $a->method();
 
-class matematika{
-    
+/*
+Ada tiga jenis hak akses dalam object alias Access Modifier:
+--> Public = Properti atau Method yang bisa diakses dimana saja dalam satu file kerja.
+--> Protected = Properti atau Method yang bisa diakses oleh kelas yang menginisiasi dan turunan kelas tersebut.
+--> Private = Properti atau Method yang HANYA bisa diakses didalam kelas yang menginisiasi.
+
+Cara mewariskan kelas adalah dengan kata kunci "extends", maka apabila kita akan mewariskan kelas Kelasku() dengan kelas yang lain adalah begini...
+
+Contoh:
+
+class kelas_anak extends Kelasku{
+/// Your code
 }
+*/
+
+class kelas_anak extends Kelasku{
+    // ini adalah kelas anak dari Kelasku yang sudah berhasi diinisiasi.
+    private $privat;
+
+    function set_privat($set){
+        $this->privat = $set;
+        return;
+    }
+
+}
+
+$anak = new kelas_anak();
+echo $anak->set_privat("cara kita ubah nilainya hanya melalui kelas yang menginisiasi tersebut...");
