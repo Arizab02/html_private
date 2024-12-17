@@ -25,8 +25,10 @@ $pondokit = new pondokitpro();
 echo $pondokit->get_asrama19()."\n";
 echo $pondok->get_asrama18()."\n";
 
-// Abstrak class
-// Ingat kelas abstrak tidak bisa diinisiasi menjadi objek
+// Abstrak class.
+// Ingat kelas abstrak tidak bisa diinstansiasi menjadi objek.
+//Yang dapat diabstrakkan hanalah method saja tidaka ada properti abstrak.
+// Yang ada hanyalah protperti biasa yang berada di kelas abstrak
 abstract class Car {
     public $name;
 
