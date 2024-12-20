@@ -1,4 +1,6 @@
 <?php
+namespace latihan1;
+
 
 // Belajar tentang objek
 
@@ -15,7 +17,7 @@ class kelasku{
 
     // dan apabila fungsi maka akan dimakan dengan Method...
     public function method(){
-        $this->properti = "Halo ini adalah isi properti yang sudah diisi dengan key \$this";
+        $this->properti = "Halo ini adalah isi properti yang sudah diisi dengan key \$this\n";
         return $this->properti;
     }
 }
@@ -51,8 +53,15 @@ class kelas_anak extends Kelasku{
         $this->privat = $set;
         return;
     }
-
+    function get_privat(){
+        return $this->privat;
+    }
 }
 
 $anak = new kelas_anak();
-echo $anak->set_privat("cara kita ubah nilainya hanya melalui kelas yang menginisiasi tersebut...");
+echo $anak->set_privat("cara kita ubah nilainya hanya melalui kelas yang menginisiasi tersebut...\n");
+
+echo $anak->get_privat();
+echo "ini adalah baris terakhir di file latihan1.php\n";
+
+echo "nama namepace ini adalah :".__NAMESPACE__."\n";
