@@ -4,7 +4,6 @@
 for($i = 0;$i < 5; $i++) {
     echo "Nomor".$i."<br>";
 }
-<<<<<<< HEAD
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +31,3 @@ if ( $sekarang == $tanggal_tertentu ) {
     ?>
 </body>
 </html>
-=======
-?>
->>>>>>> 6d78510fccdbf402b0dda75d2fd1eaef4c11095f
