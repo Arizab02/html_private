@@ -14,18 +14,7 @@ Contoh : NIK, NRP, ID, ISBN dll.
 > Auto increment = Penambahan otomatis pada suatu data, biasanya di primary key.
 > Foreign key = "sebuah data yang merepresentasikan data dari tabel lainnya "
 
+
+
 */
 
-function countsheep($num){
-    if ($num == 0){
-        return "";
-    }
-    for ($i=1; $i <= $num; $i++){
-        yield "$num sheep...\n";
-    }
-}
-
-countsheep(0);
-countsheep(1);
-countsheep(2);
-countsheep(3);
